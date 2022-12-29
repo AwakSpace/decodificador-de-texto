@@ -3,14 +3,36 @@ let output = document.getElementById('output');
 
 const criptografar = document.getElementById('criptografar');
 const descriptografar = document.getElementById('descriptografar');
-const copiar = document.getElementById('copiar');
+const copiarTexto = document.getElementById('copiar');
 
 criptografar.addEventListener('click', () => {
-    let textoParaCriptografar = input.value;
-    let criptografia = textoParaCriptografar.replace(/a/g, "ai");
-    output.value = criptografia;
+
+    let textoParaCriptografar = input.value;    
+
+    let criptE = textoParaCriptografar.replace(/e/gmi, 'enter');
+    let criptI = criptE.replace(/i/gmi, 'imes');
+    let criptA = criptI.replace(/a/gmi, 'ai');
+    let criptO = criptA.replace(/o/gmi, 'ober');
+    let criptResultado = criptO.replace(/u/gmi, 'ufat');
+
+    output.value = criptResultado;
 })
 
 descriptografar.addEventListener('click', () => {
-    output.value = input.value;
+
+    let textoParaDescriptografar = input.value;    
+
+    let descriptEnter = textoParaDescriptografar.replace(/enter/gmi, 'e');
+    let descriptImes = descriptEnter.replace(/imes/gmi, 'i');
+    let descriptAi = descriptImes.replace(/ai/gmi, 'a');
+    let descriptOber = descriptAi.replace(/ober/gmi, 'o');
+    let descriptResultado = descriptOber.replace(/ufat/gmi, 'u');
+
+    output.value = descriptResultado;
+})
+
+copiarTexto.addEventListener('click', () => {
+    output.select();
+    output.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(output.value);
 })

@@ -36,3 +36,17 @@ copiarTexto.addEventListener('click', () => {
     output.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(output.value);
 })
+
+setInterval(function verificarSeHaOutput() {
+    
+    let comOutput = document.getElementById('message');
+    let semOutput = document.getElementById('no-message');
+
+    if (output.value == ""){
+        comOutput.style.display = 'none';
+        semOutput.style.display = 'flex';
+    } else {
+        comOutput.style.display = 'flex';
+        semOutput.style.display = 'none';
+    }
+}, 100);

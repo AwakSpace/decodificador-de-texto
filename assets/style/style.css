@@ -75,7 +75,7 @@ main section div #buttons {
 main section div #buttons button:first-of-type{
     background: #0A3871;
     border-radius: 24px;
-    width: 328px;
+    width: 30%;
     height: 67px;
     padding: 24px;
     color: white;
@@ -87,7 +87,7 @@ main section div #buttons button:first-of-type{
 main section div button:last-of-type{
     background: transparent;
     border-radius: 24px;
-    width: 328px;
+    width: 30%;
     height: 67px;
     padding: 24px;
     color: #0A3871;
@@ -159,7 +159,7 @@ main aside #message textarea:focus {
 main aside #message button {
     background: transparent;
     border-radius: 24px;
-    width: 328px;
+    width: 85%;
     height: 67px;
     padding: 24px;
     color: #0A3871;
@@ -169,4 +169,67 @@ main aside #message button {
     border-color: #0A3871;
     border-radius: 24px;
     border-width: 1px;
+}
+
+
+@media (max-width: 768px){
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2vh 4vw;
+        gap: 50px;
+        height: 120vh;
+        width: 99vw;
+    }
+    
+    main section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 95%;
+        gap: 20px;
+    }
+
+    main section div #buttons {
+        justify-content: space-between;
+    }
+
+    main section div #buttons button:first-of-type, main section div button:last-of-type{
+        width: 50%;
+    }
+
+    main aside {
+        height: 90vh;
+        position:relative;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90vw;
+    }
+
+    main aside div#no-message img {
+        display: none;
+    }
+}
+
+@media (max-width: 425px){
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2vh 4vw;
+        gap: 50px;
+        height: 150vh;
+        width: 99vw;
+    }
+
+    main section div #buttons {
+        flex-direction: column;
+    }
+    main section div #buttons button:first-of-type, main section div button:last-of-type{
+        width: 100%;
+    }
 }

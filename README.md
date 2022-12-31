@@ -1,8 +1,19 @@
 # Decodificador de texto 📓
 Aplicação proposta no primeiro desafio da Oracle Next Education 🏆 
 
-![image](https://user-images.githubusercontent.com/107822310/210141066-42003e8c-0406-4613-8ad8-a7e9fedb01bf.png)
-![image](https://user-images.githubusercontent.com/107822310/210141289-b4ab7671-b633-4122-8605-3189c3eb9090.png)
+### Desktop:
+https://user-images.githubusercontent.com/107822310/210151453-5205f3d8-414f-4529-a2ee-cc9c8d5402ae.mp4
+
+### Laptop:
+![image](https://user-images.githubusercontent.com/107822310/210151473-b31cbec5-640a-41c3-b936-f7081f273afa.png)
+
+### Tablet:
+![image](https://user-images.githubusercontent.com/107822310/210151481-d60a51d5-bc19-4fb8-b27f-4935580a14e0.png)
+![image](https://user-images.githubusercontent.com/107822310/210151489-0f6a9a19-f782-401d-9b30-60696ee5b165.png)
+
+### Celular:
+![image](https://user-images.githubusercontent.com/107822310/210151496-ea345f2c-b256-4fbd-9f8c-75db6d84ec60.png)
+![image](https://user-images.githubusercontent.com/107822310/210151499-bd619786-aabe-4db8-91e6-2ddf7136a2dc.png)
 
 > Status: Finalizado ✅
 

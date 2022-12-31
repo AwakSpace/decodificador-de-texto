@@ -257,6 +257,12 @@ main aside #message button {
     }
 }
 
+@media (max-width: 800px) and (max-height: 700px) {
+    main section {
+        height: 60%;
+    }
+}
+
 @media (max-width: 425px){
     main {
         display: flex;
